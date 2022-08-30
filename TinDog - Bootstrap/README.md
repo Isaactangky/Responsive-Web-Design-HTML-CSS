@@ -1,6 +1,6 @@
-# The Complete Web Development Bootcamp - Section 6 &7 Bootstrap - Tindog Website
+# The Complete Web Development Bootcamp - Section 6 & 7 Bootstrap - Tindog Website
 
-This is a website created by following the tutorial in Udemy Course The Complete Web Development Bootcamp (https://www.udemy.com/course/the-complete-web-development-bootcamp/). This helped me to improve me coding skills in CSS and HTML by building realistic clone to Tinder-like website. 
+This is a website created by following the tutorial in Udemy Course "The Complete Web Development Bootcamp" by Agela Yu (https://www.udemy.com/course/the-complete-web-development-bootcamp/). This tutorial helped me to improve me coding skills in HTML, CSS and Bootstrap Framework by building realistic product website. 
 
 ## Table of contents
 
@@ -13,7 +13,6 @@ This is a website created by following the tutorial in Udemy Course The Complete
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -21,13 +20,14 @@ This is a website created by following the tutorial in Udemy Course The Complete
 
 Users should be able to:
 
-- View the optimal layout for each of the website depending on their device's screen size
-- Seeing the Bootstrap Functions including "Carousel", "Cards"
 - Use to navigation bar to jump to different sections
+- View the optimal layout for each of the website depending on their device's screen size
+- See the  elements from Bootstrap, such as "Carousel", "Cards"
 
 ### Links
 
 - Live Site URL: [Tindog Website](https://tindog-website-html-css.netlify.app/)
+
 
 ## My process
 
@@ -38,25 +38,31 @@ Users should be able to:
 - CSS Bootstrap 
 - Desktop-first workflow
 
-
 ### What I learned or reviewed
 
-- Bootstrap: Building website by utilising the Navigation Bar, Grid layout, Carousel, fluid container, Card classes setting
+  #### Bootstrap
+  - Creating a Bootstrap navigation Bar
+  - Using responsive Design with Bootstrap Fluid Containers
+  - Creating Bootstrap Buttons and setting the button design
+  - Use the Bootstrap Grid and Bootstrap Row to put elements side by side and flow in responsive layout
+  - Creating Bootstrap Carousel to display sliding images
+  - Creating Bootstrap Cards for pricing section
+  
+  #### CSS
+  - Z-index and positioning to set the stacking order of elements; 
 
-- CSS: Z-index and positioning to set the stacking order of elements; 
+  ```css
+  .img {
+    position: absolute;
+    index: 1;
+  }
+  ```
 
-```css
-.img {
-  position: absolute;
-  index: 1;
-}
-```
+  - CSS Selector types, piority and uses
 
-- Others: Adding media query to modify the layout of the page;
-- Ohters: Refactoring codes to increase the readability of the codes;
-- Others: CSS Selector
-
-
+  #### Others: 
+  - Adding media query to modify the layout of the page;
+  - Common practice in refactoring codes to increase the readability of the codes;
 
 
 ### Continued development
@@ -64,13 +70,10 @@ Users should be able to:
 - Bootstrap 5.1.3 is used during the coding process for the website, I need to study the differences between it and Bootstrap 4.0, which is used in the tutorial;
 
 
-
-
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
 
 
 
