@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Tindog Website/](https://tindog-website-html-css.netlify.app/)
+- Live Site URL: [Tindog Website](https://tindog-website-html-css.netlify.app/)
 
 ## My process
 
