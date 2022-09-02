@@ -1,0 +1,70 @@
+body{
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+}
+.container{
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 200px  25px;
+}
+.dist-title{
+  margin-bottom: 60px;
+}
+
+.img-info-container{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dest-image{
+  max-width: 450px;
+  /* margin-right: 50px; */
+  display: flex;
+  align-items: center;
+}
+.dest-nav-bar-info{
+  align-self: flex-start;
+  height: 100%;
+  max-width: 450px ;
+  display: flex;
+  flex-direction: column;
+  
+}
+.dest-nav-bar{
+  height: max-content;
+  display: flex;
+}
+.sub-nav{
+  justify-content: left;
+  align-items: flex-start;
+  margin: 0 0 40px;
+  color: var(--color-title);
+}
+.sub-nav li{
+  height: 34px;
+}
+
+li.active{
+  color: var(--color-text);
+  border-bottom: 3px solid var(--color-text);
+}
+
+p{
+  display: flex ;
+}
+.divider{
+  background-color: var(--color-title);
+  height: 1px;
+  margin: 54px 0 28px;
+}
+.dist-time-info{
+  display: flex;
+  justify-content: left;
+}
+.dist-time{
+  margin-right: 80px;
+}
