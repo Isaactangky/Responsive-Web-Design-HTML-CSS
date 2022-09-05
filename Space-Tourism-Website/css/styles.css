@@ -146,6 +146,7 @@ h2{
   margin: 0px;
 }
 
+
 /* heading 5 */
 h5{
   margin: 0px;
@@ -157,9 +158,26 @@ h5{
   text-transform: uppercase;
   color: var(--color-title)
 }
-
+/* Heading 3 - Bellefair Regular - 56px  crew name*/ 
+h3{
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
 
 h4{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33.6px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h6{
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -168,6 +186,7 @@ h4{
 
 p{
   font-family: 'Barlow';
+  font-style: normal;
   font-size: 18px;
   line-height: 32px;
   color: var(--color-title);

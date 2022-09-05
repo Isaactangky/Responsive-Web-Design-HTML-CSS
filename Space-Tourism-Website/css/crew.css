@@ -1,69 +1,90 @@
 body{
   background-image: url("/assets/crew/background-crew-desktop.jpg");
 }
+/* text section  */
+h6{
+  font-family: 'Bellefair';
+  opacity: 50%;
+  line-height: 37px;
+  margin-bottom: 15px;
+}
+
+h3{
+  margin-bottom: 27px;
+}
+
+p{
+  width: 450px;
+}
+
+.bold{
+  opacity: 25%;
+  font-weight: bold;
+}
 .container{
   width: 100%;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 25px 163px  25px 200px;
-}
-.dist-title{
-  margin-bottom: 60px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px 135px  0px 135px;
 }
 
-.img-info-container{
+.info-container{
+  
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: 100px;
+}
+.title{
+  margin-bottom: 150px
+}
+.crew-image{
+  display: flex;
+  align-items: center;
+  /* padding: 30px 150px 0px 0px; */
+}
+
+.crew-image img{
+  width: 92%;
+  height: auto;
+}
+.info-navbar{
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.dest-image{
-  /* margin-right: 50px; */
-  display: flex;
-  align-items: center;
-  padding: 30px 150px 0px 0px;
-}
-.dest-nav-bar-info{
-  max-width: 450px ;
-  display: flex;
-  flex-direction: column;
-  
-}
-.dest-nav-bar{
-  height: max-content;
-  display: flex;
+  justify-content: left;
+  align-items:flex-end;
 }
 .sub-nav{
+  display: flex;
   justify-content: left;
   align-items: flex-start;
-  margin: 0 0 40px;
   color: var(--color-title);
+  margin-bottom: 90px;
+  margin-left: 0rem;
 }
 .sub-nav li{
-  height: 34px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-text);
+  opacity: 18%;
 }
 
 li.active{
-  color: var(--color-text);
-  border-bottom: 3px solid var(--color-text);
+  opacity: 100%;
+}
+
+li:hover{
+  opacity: 60%;
 }
 
 p{
   display: flex ;
 }
-.divider{
-  background-color: var(--color-title);
-  height: 1px;
-  margin: 54px 0 28px;
-}
-.dist-time-info{
-  display: flex;
-  justify-content: left;
-}
-.dist-time{
-  margin-right: 80px;
-}
+
