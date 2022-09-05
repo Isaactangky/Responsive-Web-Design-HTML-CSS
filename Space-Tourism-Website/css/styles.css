@@ -42,9 +42,9 @@ body{
   justify-content: space-between;
   align-items: center;
 }
-.main-header .logo{
+/* .main-header .logo{
 
-}
+} */
 /* .main-header .nav{
   width: 95%;
   display: flex;
@@ -63,11 +63,14 @@ body{
   left: 2rem;
   
 }
+
+/* Main NavBar Section*/
 .main-header .nav {
   width: 60%;
   height: 6rem;
   background-color: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(81px);
+  flex-grow: 1;
   display: flex;
 
 }
@@ -90,6 +93,7 @@ ul{
   padding-left: 0px;
 }
 li{
+  height: 54px;
   margin-right: 1.8rem;
   text-transform: uppercase;
   font-size: 1rem;
@@ -102,11 +106,9 @@ li:last-child{
 }
 
 li:hover{
-  height: 54px;
   border-bottom: 3px solid rgba(255,255,255,0.5);
 }
-li:active{
-  height: 54px;
+li:active, li.active{
   border-bottom: 3px solid var(--color-text);
 }
 
