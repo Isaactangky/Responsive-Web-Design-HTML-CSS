@@ -50,7 +50,8 @@ a {
   font-weight: 400;
 }
 
-.bar-item:hover {
+.bar-item:hover,
+.bar-item.active {
   background-color: var(--color-text);
   color: var(--color-bg);
 }
