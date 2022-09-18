@@ -1,36 +1,34 @@
-
-
-.content-container{
-  margin:  auto ;
-  width: 80%;
+.content-container {
+  flex-grow: 1;
+  margin: 200px 165px 130px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.text{
+.text {
   width: 450px;
   height: 382px;
+  margin-right: 380px;
 }
 
 
-.landing-page-button{
-  
-  background-color: var(--color-text);
+.landing-page-button {
+  background-color: var(--color-white);
   width: 274px;
   height: 274px;
   border-radius: 50%;
-  font-family: 'Bellefair';
+  font-family: var(--font-Bellefair);
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
-  z-index: 1;
   border: none;
   cursor: pointer;
 }
-.landing-page-button:hover{
-  box-shadow: 0px 0px 0px 96.5px rgba(255, 255, 255, 0.1);
-  
+
+.landing-page-button:hover {
+  box-shadow: 0px 0px 0px 6rem rgba(255, 255, 255, 0.1);
+
 }

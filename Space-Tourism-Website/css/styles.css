@@ -1,40 +1,51 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #0B0D17;
+  --color-blue: #D0D6F9;
+  --font-Barlow-Condensed: 'Barlow Condensed', sans-serif;
+  --font-Barlow: 'Barlow', sans-serif;
+  --font-Bellefair: 'Bellefair', sans-serif;
+}
+
+/* General Styles */
 * {
   border: none;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  margin: 0px;
   overscroll-behavior-y: none;
 }
 
-:root {
-
-  --color-text: #ffffff;
-  --color-bg: #0B0D17;
-  --color-title: #D0D6F9;
-}
-
 html {
-  margin: 0px;
   width: 100%;
   height: 100vh;
-  padding: 0px;
+}
+
+/* li and a  */
+li {
+  list-style: none;
+}
+
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--color-bg);
   background: url("/assets/home/background-home-desktop.jpg") no-repeat center center/ cover;
-  color: var(--color-text);
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
 }
 
-
+/* Header Section */
 .main-header {
   margin-top: 3rem;
   height: 6rem;
@@ -45,25 +56,15 @@ body {
   align-items: center;
 }
 
-/* .main-header .logo{
 
-} */
-/* .main-header .nav{
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  
-} */
 .main-header #rectangle {
   width: 35%;
   height: 1px;
-  background-color: var(--color-text);
+  background-color: var(--color-white);
   opacity: 0.25;
-  z-index: 2;
+  z-index: 1;
   position: relative;
-  left: 2rem;
+  left: 1.5rem;
 
 }
 
@@ -75,7 +76,6 @@ body {
   backdrop-filter: blur(81px);
   flex-grow: 1;
   display: flex;
-
 }
 
 .main-header .nav .nav-bar {
@@ -86,8 +86,9 @@ body {
 }
 
 .main-header .nav .nav-bar ul {
+
   list-style-type: none;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: var(--font-Barlow-Condensed);
   font-weight: normal;
   min-width: 70%;
   height: 1rem;
@@ -118,27 +119,20 @@ body {
 
 .main-header .nav .nav-bar ul li:active,
 .main-header .nav .nav-bar ul li.active {
-  border-bottom: 3px solid var(--color-text);
+  border-bottom: 3px solid var(--color-white);
 }
 
 .main-header .nav .nav-bar ul li span {
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-}
 
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* Headings Section */
 
 
 /*  heading 1 */
 h1 {
-  font-family: 'Bellefair';
+  font-family: var(--font-Bellefair);
   font-style: normal;
   font-weight: 400;
   font-size: 150px;
@@ -150,7 +144,7 @@ h1 {
 
 /* heading 2 */
 h2 {
-  font-family: 'Bellefair';
+  font-family: var(--font-Bellefair);
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
@@ -159,21 +153,11 @@ h2 {
 }
 
 
-/* heading 5 */
-h5 {
-  margin: 0px;
-  margin-bottom: 24px;
-  font-family: 'Barlow Condensed';
-  font-size: 28px;
-  letter-spacing: 4.75px;
-  font-style: normal;
-  text-transform: uppercase;
-  color: var(--color-title)
-}
+
 
 /* Heading 3 - Bellefair Regular - 56px  crew name*/
 h3 {
-  font-family: 'Bellefair', sans-serif;
+  font-family: var(--font-Bellefair);
   font-weight: 400;
   font-style: normal;
   font-size: 56px;
@@ -182,7 +166,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: var(--font-Barlow-Condensed);
   font-weight: 400;
   font-size: 28px;
   line-height: 33.6px;
@@ -190,17 +174,29 @@ h4 {
   text-transform: uppercase;
 }
 
+/* heading 5 */
+h5 {
+  margin: 0px;
+  margin-bottom: 24px;
+  font-family: var(--font-Barlow-Condensed);
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--color-blue)
+}
+
 h6 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: var(--font-Barlow-Condensed);
   font-weight: 400;
   font-size: 28px;
   text-transform: uppercase;
 }
 
 p {
-  font-family: 'Barlow';
+  font-family: var(--font-Barlow);
   font-style: normal;
   font-size: 18px;
   line-height: 32px;
-  color: var(--color-title);
+  color: var(--color-blue);
 }

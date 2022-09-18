@@ -1,36 +1,38 @@
-body{
+body {
   background-image: url("/assets/crew/background-crew-desktop.jpg");
 }
+
 /* text section  */
-h6{
+h6 {
   font-family: 'Bellefair';
   opacity: 50%;
   line-height: 37px;
   margin-bottom: 15px;
 }
 
-h3{
+h3 {
   margin-bottom: 27px;
 }
 
-p{
+p {
   width: 450px;
 }
 
-.bold{
+.bold {
   opacity: 25%;
   font-weight: bold;
 }
-.container{
+
+.container {
   width: 100%;
   flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 25px 135px  0px 135px;
+  padding: 25px 135px 0px 135px;
 }
 
-.info-container{
+.info-container {
   width: 625px;
   /* height: 100%; */
   display: flex;
@@ -40,29 +42,33 @@ p{
   flex-wrap: wrap;
   margin-right: 80px;
 }
-.title{
+
+.title {
   margin-bottom: 150px
 }
-.crew-image{
+
+.crew-image {
   display: flex;
   align-items: flex-end;
   /* padding: 30px 150px 0px 0px; */
   width: 475px;
- 
+
 }
 
-.crew-image img{
+.crew-image img {
   max-height: 650px;
-  
+
 }
-.info-navbar{
+
+.info-navbar {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items:flex-end;
+  align-items: flex-end;
 }
-.sub-nav{
+
+.sub-nav {
   display: flex;
   justify-content: left;
   align-items: flex-start;
@@ -70,29 +76,29 @@ p{
   margin-bottom: 90px;
   margin-left: 0rem;
 }
-.sub-nav li{
+
+.sub-nav li {
   margin-right: 24px;
   border: none;
   cursor: pointer;
 }
 
-.sub-nav li a div{
+.sub-nav li a div {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: var(--color-text);
+  background-color: var(--color-white);
   opacity: 18%;
 }
 
-li a div.active{
+li a div.active {
   opacity: 100%;
 }
 
-li a div:hover{
+li a div:hover {
   opacity: 60%;
 }
 
-p{
-  display: flex ;
+p {
+  display: flex;
 }
-
