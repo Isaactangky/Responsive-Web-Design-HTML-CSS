@@ -8,11 +8,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 163px 25px 200px;
+  padding: 4.5rem 10rem 3rem;
 }
 
 .dist-title {
-  margin-bottom: 60px;
+  margin-bottom: 3.5rem;
 }
 
 .img-info-container {
@@ -22,14 +22,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 9rem;
 }
 
 .dest-image {
-  /* margin-right: 50px; */
-  display: flex;
-  align-items: center;
-  padding: 30px 150px 0px 0px;
+  margin-top: 1rem;
 }
+
 
 .dest-nav-bar-info {
   max-width: 450px;
@@ -38,35 +37,40 @@ body {
 
 }
 
+/* sub navbar  */
 .dest-nav-bar {
   height: max-content;
   display: flex;
 }
 
 .sub-nav {
+  display: flex;
+  gap: 2.5rem;
   justify-content: left;
   align-items: flex-start;
-  margin: 0 0 40px;
-  color: var(--color-title);
+  margin: 0 0 2rem;
+  color: var(--color-blue);
 }
 
 .sub-nav li {
-  height: 34px;
+  height: 2rem;
 }
 
-li.active {
+.sub-nav li.active,
+.sub-nav li:active {
   color: var(--color-white);
   border-bottom: 3px solid var(--color-white);
 }
 
-p {
-  display: flex;
+.sub-nav li:hover {
+  border-bottom: 3px solid var(--color-white-transparent);
 }
 
+/* Text Section */
 .divider {
-  background-color: var(--color-title);
+  background-color: var(--color-blue);
   height: 1px;
-  margin: 54px 0 28px;
+  margin: 3rem 0 2rem;
 }
 
 .dist-time-info {
@@ -75,5 +79,5 @@ p {
 }
 
 .dist-time {
-  margin-right: 80px;
+  margin-right: 4.5rem;
 }

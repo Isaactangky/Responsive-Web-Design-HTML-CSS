@@ -3,11 +3,11 @@ body {
 }
 
 /* text section  */
-h6 {
-  font-family: 'Bellefair';
+/* title  */
+h4 {
   opacity: 50%;
-  line-height: 37px;
-  margin-bottom: 15px;
+  line-height: 2.3rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -18,10 +18,7 @@ p {
   width: 450px;
 }
 
-.bold {
-  opacity: 25%;
-  font-weight: bold;
-}
+
 
 .container {
   width: 100%;
@@ -43,7 +40,7 @@ p {
   margin-right: 80px;
 }
 
-.title {
+.title-container {
   margin-bottom: 150px
 }
 
@@ -72,7 +69,7 @@ p {
   display: flex;
   justify-content: left;
   align-items: flex-start;
-  color: var(--color-title);
+  color: var(--color-blue);
   margin-bottom: 90px;
   margin-left: 0rem;
 }

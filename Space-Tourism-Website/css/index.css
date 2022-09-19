@@ -1,6 +1,6 @@
 .content-container {
   flex-grow: 1;
-  margin: 200px 165px 130px;
+  margin: 180px 165px 130px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -9,7 +9,7 @@
 .text {
   width: 450px;
   height: 382px;
-  margin-right: 380px;
+  margin-right: 22rem;
 }
 
 

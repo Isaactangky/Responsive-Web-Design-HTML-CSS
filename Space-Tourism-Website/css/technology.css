@@ -3,7 +3,8 @@ body {
 }
 
 .container {
-  margin: 70px 0 0 165px;
+  flex-grow: 1;
+  margin: 4.5rem 0 4rem 10rem;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +48,7 @@ a {
   border-radius: 50%;
   text-align: center;
   padding: 1.2rem 0;
-  border: 1px solid rgba(255, 255, 255, .5);
+  border: 1px solid var(--color-white-transparent);
   /* padding-top: auto; */
   font-family: 'Bellefair', sans-serif;
   font-size: 32px;

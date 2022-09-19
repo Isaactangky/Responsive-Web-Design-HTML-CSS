@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+    rel="stylesheet">
+
   <!-- Style Sheets -->
-  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/destination.css" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body>
   <!-- Header Section -->
   <header class="main-header">
     <div class="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+        </g>
+      </svg>
     </div>
     <div id="rectangle"></div>
     <div class="nav">
       <nav class="nav-bar">
         <ul>
-          <li >
+          <li>
             <a href="index.html">
               <span>00</span> Home
             </a>
@@ -48,18 +57,19 @@
           </li>
         </ul>
       </nav>
-    </div> 
+    </div>
   </header>
   <div class="container">
     <div class="dist-title">
-      <h4><span class="gray">01</span> Pick your destination</h4>
+      <p class="title"><span class="section-num">01</span> Pick your destination</title>
+
     </div>
     <div class="img-info-container">
       <div class="dest-image"><img src="assets/destination/image-mars.webp"></div>
       <div class="dest-nav-bar-info">
         <nav class="dest-nav-bar">
           <ul class="sub-nav">
-            <li ><a href="destination-moon.html">Moon</a></li>
+            <li><a href="destination-moon.html">Moon</a></li>
             <li class="active"><a href="destination-mars.html">Mars</a></li>
             <li><a href="destination-europa.html">Europa</a></li>
             <li><a href="destination-titan.html">Titan</a></li>
@@ -68,26 +78,27 @@
         <div class="dest-info">
           <h2>Mars</h2>
           <p>
-            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-            the tallest planetary mountain in our solar system. It’s two and a half times 
+            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+            the tallest planetary mountain in our solar system. It’s two and a half times
             the size of Everest!
           <p>
           <div class="divider"></div>
           <div class="dist-time-info">
             <div class="dist-time">
               <p>Avg. distance</p>
-              <h4>225 mil. km</h4>
+              <p class="subheading-one">225 mil. km</p>
             </div>
             <div class="dist-time">
               <p>Est. travel time</p>
-              <h4>9 months</h4>
+              <p class="subheading-one">9 months</p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
   </div>
   <script type="module" src="index.js"></script>
 </body>
+
 </html>
