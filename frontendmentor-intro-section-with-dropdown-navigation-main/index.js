@@ -1,4 +1,4 @@
-const openMenu = document.querySelector(".menu");
+const openMenu = document.querySelector(".menu-icon");
 const closeMenu = document.querySelector(".close-menu");
 
 const overlay = document.querySelector(".overlay");

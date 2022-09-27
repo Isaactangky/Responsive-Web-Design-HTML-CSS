@@ -5,8 +5,11 @@
   --color-white: hsl(0, 0%, 98%);
   --color-gray: hsl(0, 0%, 41%);
   --color-black: hsl(0, 0%, 8%);
+  --padding-left-right: 2rem;
+  --footer-height: 3rem;
+  --header-height: 5rem;
 }
-
+/*  General Designs  */
 * {
   margin: 0;
   padding: 0;
@@ -15,56 +18,56 @@
   font-weight: 500;
   color: var(--color-gray);
 }
-
-body,
-html,
-.page-wrapper {
-  /* height: 100vh; */
-  width: 100%;
-  background-color: var(--color-white);
-}
-
-header {
-  width: 100%;
-  height: 5rem;
-  padding: 2rem 2rem 1rem;
-
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-}
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
 }
+a,
+button {
+  cursor: pointer;
+}
+button {
+  font-weight: 700;
+  height: 3rem;
+  padding: 0px 1.5rem;
+  border-radius: 15px;
+}
+body {
+  background-color: var(--color-white);
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
+  padding: 2rem var(--padding-left-right) 1rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
 
 .navbar-user-wrapper {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.navbar-user {
+/* .navbar-user {
   flex-grow: 1;
   display: flex;
   align-items: center;
-}
+} */
 .navbar .main-menu {
-  list-style: none;
   margin-left: 4rem;
   display: flex;
   gap: 2rem;
-  width: 100%;
+  /* width: 100%; */
 }
 .main-menu > li {
   position: relative;
 }
-/* .main-menu > li:hover .sub-menu {
-  display: block;
-} */
-
+/* Dropdown Menus  */
 .sub-menu {
   background-color: white;
   border-radius: 5px;
@@ -76,8 +79,11 @@ ul {
   flex-direction: column;
   gap: 0.5rem;
 }
-.sub-menu li {
+.sub-menu img {
+  width: 1rem;
+  margin-right: 0.25rem;
 }
+
 .sub-menu li:hover {
   color: var(--color-black);
 }
@@ -87,18 +93,43 @@ ul {
 }
 .sub-menu.company {
   width: 7rem;
-
   left: 0;
 }
 
+/* User Login Signup  */
 .user-login {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
+
+.btn-login {
+  border: none;
+  background-color: var(--color-white);
+  margin-right: 3rem;
+  height: 1rem;
+  padding: 0;
+  border-radius: 0px;
+}
+
+.btn-login:hover {
+  color: var(--color-black);
+}
+
+.btn-register {
+  border: 2px solid var(--color-gray);
+  background-color: var(--color-white);
+}
+
+.btn-register:hover {
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+
+/* Menu Icons  */
 .close-menu {
   display: none;
 }
 
-.menu {
+.menu-icon {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -107,11 +138,10 @@ ul {
 
 /* Content section */
 .page-wrapper {
-  height: calc(100% - 100px);
-  padding: 30px 150px 90px;
-  margin-bottom: 30px;
+  padding: 2rem 10rem 6rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .text-content {
@@ -123,6 +153,7 @@ ul {
 h1,
 h1 span {
   font-size: 5rem;
+  font-weight: 700;
   color: var(--color-black);
 }
 h1 span {
@@ -131,61 +162,28 @@ h1 span {
 }
 
 p {
-  display: block;
   max-width: 400px;
   line-height: 1.5rem;
   margin: 2rem 0;
 }
 
-button {
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn-light {
-  border: none;
-  background-color: var(--color-white);
-  margin-right: 3rem;
-}
-
-.btn-light:hover {
-  color: var(--color-black);
-}
-
-.btn-outline {
-  height: 50px;
-  padding: 0px 20px;
-  border-radius: 15px;
-  border: 2px solid var(--color-gray);
-  background-color: var(--color-white);
-}
-
-.btn-outline:hover {
-  border: 2px solid var(--color-black);
-  color: var(--color-black);
-}
-
 .btn-black {
-  height: 50px;
-  padding: 0px 20px;
-  border-radius: 15px;
   color: var(--color-white);
-  border: none;
+  border: 2px solid var(--color-black);
   background-color: var(--color-black);
 }
 
 .btn-black:hover {
-  border: 2px solid var(--color-black);
   color: var(--color-black);
   background-color: var(--color-white);
 }
 
 .client-logos {
-  width: 450px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0rem;
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .img-container img {
@@ -194,8 +192,9 @@ button {
 
 /* Given Styles */
 .attribution {
-  padding: 20px;
-  font-size: 11px;
+  height: var(--footer-height);
+  padding: 0.5rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -203,6 +202,7 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
+/* Overlay above body and below main menu */
 .overlay {
   /* width: calc(100% - 12rem); */
   width: 100%;
@@ -253,7 +253,7 @@ button {
     gap: 2rem;
   }
 
-  .btn-light {
+  .btn-login {
     margin-right: 0rem;
   }
 
@@ -263,7 +263,7 @@ button {
     top: 1rem;
     right: 1rem;
   }
-  .menu {
+  .menu-icon {
     display: block;
   }
 
